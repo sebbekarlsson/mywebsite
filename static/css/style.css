@@ -144,6 +144,29 @@
   .link-list svg, .link-list object {
     pointer-events: none; }
 
+.post-list .post-list-post {
+  font-family: Sans-Serif;
+  width: 80%;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto; }
+  .post-list .post-list-post .post-list-post-head {
+    padding-bottom: 1rem;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: black; }
+    .post-list .post-list-post .post-list-post-head h2 {
+      text-transform: capitalize; }
+    .post-list .post-list-post .post-list-post-head i {
+      margin-bottom: 1rem; }
+  .post-list .post-list-post .post-list-post-body {
+    padding-top: 1rem; }
+    .post-list .post-list-post .post-list-post-body p {
+      max-width: 80%; }
+    .post-list .post-list-post .post-list-post-body .btn {
+      margin-top: 1rem;
+      display: block; }
+
 * {
   margin: 0;
   padding: 0; }
