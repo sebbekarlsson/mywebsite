@@ -3,5 +3,20 @@
 
 {% block body %}
     <div class='view view-posts'>
+        <div class='post-list push-down'>
+            {% for post in PostFacade.get_all(query={'kind': 'blogpost'}) %}
+                <div class='post-list-post'>
+                    <div class='post-list-post-head'>
+                        <h3>{{ post.name }}</h3>
+                        {% if post.assets %}
+                            <img src='/uploads/{{ post.assets[0].filename }}'/>
+                        {% endif %}
+                    </div>
+                    <div class='post-list-post-body'>
+                        <p>{{ post.content }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
     </div>
 {% endblock %}
