@@ -1,0 +1,22 @@
+.link-list {
+    text-align: center;
+
+    li, a {
+        display: inline-block;
+    }
+
+    li {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    img, object, svg {
+        width: 32px;
+        height: 32px;
+        vertical-align: middle;
+    }
+
+    svg, object {
+        pointer-events: none;
+    }
+}

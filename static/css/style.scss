@@ -1,0 +1,28 @@
+@import 'mixins.scss';
+@import 'navbar.scss';
+@import 'view.scss';
+@import 'bg-image.scss';
+@import 'split.scss';
+@import 'hero.scss';
+@import 'card.scss';
+@import 'card-list.scss';
+@import 'link-list.scss';
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.site-section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    @include font-default;
+    background-color: white;
+}
+
+.site-content {
+    width: 80%;
+    margin: auto;
+}

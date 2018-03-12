@@ -1,0 +1,32 @@
+@import 'mixins.scss';
+
+
+.navbar {
+    @include display-flex;
+    flex-direction: row;
+    height: 48px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    .navbar-item {
+        flex: 1;
+        @include display-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        text-transform: capitalize;
+        color: white;
+        @include font-default;
+        font-weight: 200;
+
+        &:hover {
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+@import 'mixins.scss';
+
+
+.card {
+    width: 300px;
+    min-height: 200px;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 1rem;
+    @include shadow-2;
+    @include font-default;
+
+    .card-head {
+        text-align: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-bottom-color: black;
+    }
+
+    .card-content {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+
+        * { font-weight: 200; }
+    }
+}
